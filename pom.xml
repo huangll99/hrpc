@@ -83,7 +83,7 @@
       <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>${kryo.version}</version>
+        <version>${lombok.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
