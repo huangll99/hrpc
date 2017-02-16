@@ -2,6 +2,8 @@ package com.hll.hrpc.proto;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 /**
  * Created by huangll on 17/2/15.
  */
@@ -11,7 +13,9 @@ import lombok.*;
 @ToString
 @Getter
 @Setter
-public class RpcResponse {
+public class RpcResponse implements Serializable{
+
+  private static final long serialVersionUID = -1663840385137805336L;
 
   public String messageId;
 

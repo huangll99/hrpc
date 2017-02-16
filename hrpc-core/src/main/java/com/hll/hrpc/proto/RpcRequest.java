@@ -2,6 +2,8 @@ package com.hll.hrpc.proto;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 /**
  * Created by huangll on 17/2/15.
  */
@@ -12,7 +14,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
-public class RpcRequest {
+public class RpcRequest implements Serializable{
+
+  private static final long serialVersionUID = 4193139944489732897L;
 
   private String messageId;
 
