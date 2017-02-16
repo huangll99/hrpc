@@ -14,9 +14,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
-public class RpcRequest implements Serializable{
+public class RpcRequest implements Serializable {
 
-  private static final long serialVersionUID = 4193139944489732897L;
+  private static final long serialVersionUID = -4323262752334497174L;
 
   private String messageId;
 
