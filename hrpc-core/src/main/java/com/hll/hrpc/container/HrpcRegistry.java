@@ -1,17 +1,24 @@
 package com.hll.hrpc.container;
 
+import com.hll.hrpc.server.HrpcServer;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.InitializingBean;
 
 /**
- * Created by huangll on 17/2/16.
+ * Author: huangll
+ * Written on 17/2/16.
  */
 @Getter
 @Setter
-public class HrpcRegistry {
+public class HrpcRegistry implements InitializingBean {
 
   private String address;
 
   private String protocol;
 
+  @Override
+  public void afterPropertiesSet() throws Exception {
+    HrpcServer.getInstance().start(address, protocol);
+  }
 }

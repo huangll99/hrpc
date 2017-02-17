@@ -7,7 +7,8 @@ import org.springframework.beans.factory.xml.ParserContext;
 import org.w3c.dom.Element;
 
 /**
- * Created by huangll on 17/2/16.
+ * Author: huangll
+ * Written on 17/2/16.
  */
 public class HrpcRegistryParser implements BeanDefinitionParser {
   @Override
